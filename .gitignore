@@ -1,22 +1,36 @@
-# Dependencies
+# ── Dependencies ──────────────────────────────────────────────────────────────
 node_modules/
 
-# Build output
-dist/
-out/
-
-# Environment variables — never commit these
+# ── Environment variables — never commit real credentials ─────────────────────
 .env
 .env.*
 !.env.example
 
-# Foundry
+# ── Build output ──────────────────────────────────────────────────────────────
+dist/
+out/
+
+# ── Foundry build artifacts ───────────────────────────────────────────────────
 contracts/out/
 contracts/cache/
+contracts/broadcast/
 
-# Logs
+# ── Forge dependencies (managed by foundry, not committed) ────────────────────
+lib/
+
+# ── Logs and local dev traces ─────────────────────────────────────────────────
 *.log
+console.jsonl
+traces.jsonl
 
-# OS
+# ── Bun lockfile (optional — remove this line to commit it) ───────────────────
+# bun.lock
+
+# ── OS artifacts ──────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
+
+# ── Editor ────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
