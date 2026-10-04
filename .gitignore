@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+out/
+
+# Environment variables — never commit these
+.env
+.env.*
+!.env.example
+
+# Foundry
+contracts/out/
+contracts/cache/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
